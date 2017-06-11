@@ -1,0 +1,28 @@
+{
+  "name": "saberceo",
+  "version": "1.0.0",
+  "description": "--- Fantasy CEO, or \"Sabermetric\" CEO, e.g. fantasy football but simulating a CEO, selecting C-level people, board members etc. Derived from publically-available SEC listings, track owners/C-level people, allow them to be selected onto \"teams\" and the \"company\" performs relative to the holdings, i.e. \"skill\" of their members. Also maybe have the company be able to pick one or more industries or market sectors to operate in and find some macro performance metric to factor in as well.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/espetey/saberceo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/espetey/saberceo/issues"
+  },
+  "homepage": "https://github.com/espetey/saberceo#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
+}
