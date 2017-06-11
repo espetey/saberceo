@@ -7,7 +7,7 @@ Fantasy CEO, or "Sabermetric" CEO, e.g. fantasy football but simulating a CEO, s
 - [ ] CEO information from wikipedia, is that freely available via API
 - [ ] Aggregate holdings by positions
 - [ ] Find industry/sector performance metric on a daily basis? what is free?
-- [ ] Use Crunchbase/Mattermark/AngelList as a sort of recruiting/draft-day style view of potential IPO's and other metrics on holdings of people
+- [ ] Use Crunchbase/Mattermark/AngelList/StockTwits as a sort of recruiting/draft-day style view of potential IPO's and other metrics on holdings of people
 
 #### Architecture
 - Node.js
