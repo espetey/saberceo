@@ -12,7 +12,7 @@ Fantasy CEO, or "Sabermetric" CEO, e.g. fantasy football but simulating a CEO, s
 #### Architecture
 - Node.js
 - MySQL
-- Angular 2
+- Angular or React
 
 #### Resources
 - https://www.sec.gov/cgi-bin/browse-edgar?company=facebook&owner=exclude&action=getcompany
