@@ -38,24 +38,45 @@ request(edgarCompanyUrl, (err, res, body) => {
   if (body) {
     const $ = cheerio.load(body)
     // console.log($.html())
-    const insiders = $('a:contains("insider transactions")');
+    const insiders = $('a:contains("insider transactions")')
     // console.log(insiders)
     const insider = insiders[0]
-    const insiderHref = `${URL_ROOT}${insider.attribs.href}`
-    // console.log(insiderHref)
+    const insiderHrefUrl = `${URL_ROOT}${insider.attribs.href}`
+    // console.log(insiderHrefUrl)
 
-    
+    request(insiderHrefUrl, (err, res, body1) => {
+      if (body) {
+        const $1 = cheerio.load(body1)
+        const dest = $1('html body div table').children().first().children().last().children().first().children().first().children().first().children().last().children().last().children().last().children().last().children()
+        dest.splice(0, 1)
+        // console.log(dest)
+        dest.each((d, i) => {
+          const $some = cheerio.load(i)
+          // console.log(some.html())
+          // console.log('\n')
+          const someTd = $some('td a')
+          // console.log(someTd.children().text())
+          // console.log(someTd.first())
+          someTd.each((x, y) => {
+            // console.log(y.attribs.href)
+            // console.log(x)
+            if (x === 0) {
+              const ownerUrl = `${URL_ROOT}${y.attribs.href}`
+              console.log(ownerUrl)
+              request(ownerUrl, (err, res, body2) => {
+                const $2 = cheerio.load(body2);
+                const issuers = $2('table:contains("Issuer")')
+                console.log(issuers.text())
+                console.log('---\n')
+              })
+            }
+          })
+        })
+      }
+    })
+
+    // /html/body/div/table[1]/tbody/tr[2]/td/table/tbody/tr[4]/td/table/tbody/tr[2]
+
 
   }
-  // console.log(arguments)
-  // if (err) {
-  //   res.send(err)
-  // } else {
-  //   const $ = cheerio.load(html)
-  //   console.log($.html())
-  //   const html = $.html()
-  //   console.log(res)
-  //   fs.writeFile('output.json', html)
-  //   // res.json($.text)
-  // }
 })
