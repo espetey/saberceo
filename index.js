@@ -62,7 +62,7 @@ request(edgarCompanyUrl, (err, res, body) => {
             // console.log(x)
             if (x === 0) {
               const ownerUrl = `${URL_ROOT}${y.attribs.href}`
-              console.log(ownerUrl)
+              console.log('owner URL: ' + ownerUrl)
               request(ownerUrl, (err, res, body2) => {
                 const $2 = cheerio.load(body2);
                 const issuers = $2('table:contains("Issuer")')
