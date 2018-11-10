@@ -36,7 +36,3 @@ Fantasy CEO, or "Sabermetric" CEO, e.g. fantasy football but simulating a CEO, s
 - [MSFT](https://www.sec.gov/cgi-bin/own-disp?action=getissuer&CIK=0000789019)
 - [FB](https://www.sec.gov/cgi-bin/own-disp?action=getissuer&CIK=0001326801)
 - [NFLX](https://www.sec.gov/cgi-bin/own-disp?action=getissuer&CIK=0001065280)
-
-#### Side thoughts...
-Index fund investing site, index fund reviews, strategies, "index fund of index funds"
-IndexZoo, IndexGenius, IndexMultiple, IndexMultiplier, StackedIndex, IndexBag, IndexCrew, IndexGeorge, IndexBig, IndexJam, IndexAsk, IndexFan, IndexFans, IndexHut, IndexTip, IndexKid, IndexKids, IndexSEC, IndexTax, IndexRun, IndexRex, IndexYes, IndexBaby, IndexBeta, IndexBoss, IndexBuys, IndexCamp, IndexDays, IndexFAQs, IndexFarm, IndexGods, IndexHeat, IndexHour, IndexLion, IndexPick, IndexQuiz, IndexForm, IndexCoach, IndexSuite, IndexBoss, IndexFilter
